@@ -45,7 +45,12 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href=<%= pages_index_path %>>Instaparking</a>
+        <a class="navbar-brand" href=<%= pages_index_path %>>
+         <!--Cambio Jose - Inserta Logo-->
+          <img class="imagen_logo" >
+            <%= image_tag "logo_instaparking.jpg", :alt => "Logo", :title => "InstaParking"%>
+          </img>
+        </a>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
             <%= render 'layouts/menu' %>
