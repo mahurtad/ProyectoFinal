@@ -38,27 +38,23 @@
   </head>
   <body>
 
-	 <nav class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-          <!--<span class="sr-only">Desplegar menu</span>-->
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href=<%= pages_index_path %>>
-         <!--Cambio Jose - Inserta Logo-->
-          <img class="imagen_logo" >
-            <%= image_tag "logo_instaparking.jpg", :alt => "Logo", :title => "InstaParking"%>
-          </img>
-        </a>
-        <div class="navbar-collapse collapse navbar-responsive-collapse">
-          <ul class="nav navbar-nav">
-            <%= render 'layouts/menu' %>
-          </ul>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href=<%= pages_index_path %>></a>Ingreso</a>
+          <div class="container nav-collapse">
+            <ul class="nav">
+              <%= render 'layouts/menu' %>
+            </ul>
+          </div><!--/.nav-collapse -->
         </div>
       </div>
-    </nav>
+    </div>
 
     <div class="container">
         <div class="row">
@@ -71,7 +67,7 @@
               <h3>Sidebar</h3>
               <ul class="nav nav-list">
                 <li class="nav-header">Sidebar</li>
-                  <%= render 'layouts/menu' %>
+                <%= render 'layouts/menu' %>
               </ul>
             </div><!--/.well -->
           </div><!--/span-->
@@ -83,5 +79,5 @@
 
     </div> <!-- /container -->
 
-  </body>
+</body>
 </html>
