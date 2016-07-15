@@ -38,7 +38,7 @@
   </head>
   <body>
 
-    <div class="navbar navbar-static-top">
+    <div class="navbar navbar-inverse navbar-static-top">
       <div class="navbar-inner">
         <div class="container">
           <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
@@ -46,7 +46,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href=<%= pages_index_path %>></a>Ingreso</a>
+          <a class="brand" href=<%= pages_index_path %>></a>
+            <img class="imagen_logo" >
+              <%= image_tag "logo.png", :alt => "Logo", :title => "InstaParking"%>
+            </img>
+          </a>
           <div class="container nav-collapse">
             <ul class="nav">
               <%= render 'layouts/menu' %>
