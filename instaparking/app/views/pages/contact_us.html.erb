@@ -1,2 +1,35 @@
-<h1>Contact us</h1>
-<p>Find me in app/views/pages/contact_us.html.erb</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<h1>Contact Us</h1>
+
+<form>
+  <div class="form-group">
+    <label for="inputname">Name</label>
+    <input type="text" class="form-control" id="inputname" placeholder="Name">
+  </div> 
+  <div class="form-group">
+    <label for="inputmail">Email address</label>
+    <input type="email" class="form-control" id="inputmail" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="inputphone">Phone</label>
+    <input type="text" class="form-control" id="inputphone" placeholder="Phone">
+  </div>
+  <div class="form-group">
+    <label for="inputcomment">Comment</label>
+    <textarea class="form-control" rows="5" id="inputcomment" placeholder="Comment"></textarea>
+    <!--<input type="text" class="form-control" id="imputcomment" placeholder="Comment">-->
+  </div>
+  <div class="form-group">
+    <label for="inputFile">If you want to attach a file:</label>
+    <input type="file" id="inputfile">
+    <!--<p class="help-block">Example block-level help text here.</p>-->
+  </div>
+  <!--<div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>-->
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
