@@ -6766,3 +6766,9 @@ button.close {
 }
 /*# sourceMappingURL=bootstrap.css.map */
 
+    
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 60%;
+    margin: auto;
+  }
